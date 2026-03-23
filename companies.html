@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Companies - StudentGig</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Student<span>Gig</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="companies.html" class="active">Companies</a>
+                <a href="courses.html">Courses</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <a href="post_job.html" class="btn btn-green">Post a Job</a>
+                <a href="login.html" class="btn btn-green">Log In</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Top <span>Companies</span> Hiring Now</h1>
+            <p>Discover Sri Lanka's leading employers and find your next career opportunity.</p>
+            <div class="search-box">
+                <input type="text" id="company-search" placeholder="Company name or industry">
+                <input type="text" id="company-location" placeholder="Location">
+                <button class="btn btn-green" id="company-search-btn">Search Companies</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="company-stats">
+            <div class="stat-card"><span class="stat-number">500+</span> <span class="stat-label">Companies</span></div>
+            <div class="stat-card"><span class="stat-number">2,500+</span> <span class="stat-label">Open Jobs</span></div>
+            <div class="stat-card"><span class="stat-number">15,000+</span> <span class="stat-label">Placements</span></div>
+        </div>
+        <h2 class="section-title">Featured Companies</h2>
+        <div class="company-grid-enhanced" id="company-grid-container"></div>
+        <div class="company-cta">
+            <h3>Is your company hiring?</h3>
+            <p>Join StudentGig and reach thousands of qualified candidates today.</p>
+            <a href="post_job.html" class="btn btn-green">Get Started</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StudentGig</h3>
+                    <p>Sri Lanka's premier job portal connecting talented professionals with leading companies.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs.html">Find Jobs</a></li>
+                        <li><a href="companies.html">Companies</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>For Employers</h3>
+                    <ul>
+                        <li><a href="post_job.html">Post a Job</a></li>
+                        <li><a href="#" class="coming-soon">Search Resumes</a></li>
+                        <li><a href="#" class="coming-soon">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 StudentGig. All rights reserved. Sri Lanka's Trusted Job Portal.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>

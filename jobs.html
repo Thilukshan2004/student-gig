@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Jobs - StudentGig</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Student<span>Gig</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="jobs.html" class="active">Jobs</a>
+                <a href="companies.html">Companies</a>
+                <a href="courses.html">Courses</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <a href="post_job.html" class="btn btn-green">Post a Job</a>
+                <a href="login.html" class="btn btn-green">Log In</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Find Your Dream <span>Job</span> Today</h1>
+            <p>Thousands of jobs from Sri Lanka's top companies – find the perfect role for you.</p>
+            <div class="search-box">
+                <input type="text" id="search-keywords" placeholder="Job title, keywords, or company">
+                <input type="text" id="search-location" placeholder="Location">
+                <button class="btn btn-green" id="search-btn">Search Jobs</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="jobs-layout">
+            <aside class="job-filters">
+                <h3>Filter Jobs</h3>
+                <form id="filter-form">
+                    <div class="filter-group">
+                        <label>Location</label>
+                        <select id="filter-location">
+                            <option>Any Location</option>
+                            <option>Colombo</option>
+                            <option>Kandy</option>
+                            <option>Galle</option>
+                            <option>Jaffna</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Job Type</label>
+                        <select id="filter-type">
+                            <option>All Types</option>
+                            <option>Full Time</option>
+                            <option>Part Time</option>
+                            <option>Contract</option>
+                            <option>Internship</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Category</label>
+                        <select id="filter-category">
+                            <option>All Categories</option>
+                            <option>IT</option>
+                            <option>Marketing</option>
+                            <option>Finance</option>
+                            <option>Design</option>
+                            <option>HR</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Salary Range (LKR)</label>
+                        <div class="salary-range">
+                            <input type="number" id="filter-min-salary" placeholder="Min">
+                            <span>-</span>
+                            <input type="number" id="filter-max-salary" placeholder="Max">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-green">Apply Filters</button>
+                </form>
+            </aside>
+
+            <main class="job-listings">
+                <div class="job-header">
+                    <p><span class="job-count" id="job-count">0</span> jobs found</p>
+                    <div class="sort-options">
+                        <label>Sort by:</label>
+                        <select id="sort-select">
+                            <option value="recent">Most Recent</option>
+                            <option value="salary-desc">Salary: High to Low</option>
+                            <option value="salary-asc">Salary: Low to High</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="job-grid" id="job-grid-container"></div>
+                <div class="pagination" id="pagination"></div>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StudentGig</h3>
+                    <p>Sri Lanka's premier job portal connecting talented professionals with leading companies.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs.html">Find Jobs</a></li>
+                        <li><a href="companies.html">Companies</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>For Employers</h3>
+                    <ul>
+                        <li><a href="post_job.html">Post a Job</a></li>
+                        <li><a href="#" class="coming-soon">Search Resumes</a></li>
+                        <li><a href="#" class="coming-soon">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 StudentGig. All rights reserved. Sri Lanka's Trusted Job Portal.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>

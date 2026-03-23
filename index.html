@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentGig - Jobs in Sri Lanka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Student<span>Gig</span></a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="companies.html">Companies</a>
+                <a href="courses.html">Courses</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <a href="post_job.html" class="btn btn-green">Post a Job</a>
+                <a href="login.html" class="btn btn-green">Log In</a>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div
+            style="min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 40px 20px; background: linear-gradient(135deg, #0d2017 0%, #0e7251 100%);">
+            <div id="float1"
+                style="position: absolute; top: 10%; left: 5%; width: 150px; height: 150px; background: rgba(255,255,255,0.1); border-radius: 50%; transition: transform 0.1s ease;">
+            </div>
+            <div id="float2"
+                style="position: absolute; bottom: 15%; right: 8%; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%; transition: transform 0.1s ease;">
+            </div>
+            <div id="float3"
+                style="position: absolute; top: 20%; right: 15%; width: 100px; height: 100px; background: rgba(255,255,255,0.1); border-radius: 50%; transition: transform 0.1s ease;">
+            </div>
+            <div id="float4"
+                style="position: absolute; bottom: 25%; left: 10%; width: 120px; height: 120px; background: rgba(255,255,255,0.1); border-radius: 50%; transition: transform 0.1s ease;">
+            </div>
+            <div id="pulse1"
+                style="position: absolute; top: 50%; left: 50%; width: 300px; height: 300px; border-radius: 50%; background: rgba(16, 185, 129, 0.1); transform: translate(-50%, -50%) scale(1);">
+            </div>
+            <div id="pulse2"
+                style="position: absolute; top: 50%; left: 50%; width: 450px; height: 450px; border-radius: 50%; background: rgba(16, 185, 129, 0.05); transform: translate(-50%, -50%) scale(1);">
+            </div>
+            <div id="pulse3"
+                style="position: absolute; top: 50%; left: 50%; width: 600px; height: 600px; border-radius: 50%; background: rgba(16, 185, 129, 0.03); transform: translate(-50%, -50%) scale(1);">
+            </div>
+            <div id="rotate1" style="position: absolute; top: 15%; right: 20%;"><i class="fas fa-briefcase"
+                    style="font-size: 40px; color: rgba(255,255,255,0.2);"></i></div>
+            <div id="rotate2" style="position: absolute; bottom: 20%; left: 15%;"><i class="fas fa-users"
+                    style="font-size: 50px; color: rgba(255,255,255,0.2);"></i></div>
+            <div id="bounceIcon" style="position: absolute; top: 30%; left: 8%;"><i class="fas fa-rocket"
+                    style="font-size: 35px; color: rgba(255,255,255,0.2);"></i></div>
+            <div style="max-width: 1200px; width: 100%; text-align: center; position: relative; z-index: 10;">
+                <div id="fadeIcon"
+                    style="opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; margin-bottom: 30px;">
+                    <div id="bounceDiv"
+                        style="display: inline-block; background: rgba(255,255,255,0.2); padding: 20px; border-radius: 50%; backdrop-filter: blur(10px);">
+                        <i class="fas fa-graduation-cap" style="font-size: 50px; color: white;"></i></div>
+                </div>
+                <div id="slideLeft" style="opacity: 0; transform: translateX(-50px); transition: all 1s ease-out;">
+                    <h1 style="font-size: 4rem; color: white; margin: 0 0 15px 0; font-weight: 800;">Welcome to <span
+                            style="background: linear-gradient(135deg, #fff 0%, #10b981 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">StudentGig</span>
+                    </h1>
+                </div>
+                <div id="slideRight"
+                    style="opacity: 0; transform: translateX(50px); transition: all 1s ease-out; transition-delay: 0.2s;">
+                    <p id="typingText"
+                        style="font-size: 1.5rem; color: rgba(255,255,255,0.95); font-weight: 500; border-right: 3px solid #10b981; white-space: nowrap; overflow: hidden; width: 0; margin: 0 auto; display: inline-block;">
+                        Sri Lanka's Premier Student Job Portal</p>
+                </div>
+                <div id="fadeUp"
+                    style="opacity: 0; transform: translateY(30px); transition: all 1s ease-out; transition-delay: 0.5s; margin-top: 30px;">
+                    <p style="font-size: 1.1rem; color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto;">Connect with
+                        top companies, find internships, and kickstart your career journey. Thousands of opportunities waiting
+                        for you!</p>
+                </div>
+                <div id="featuresGrid"
+                    style="display: flex; gap: 20px; justify-content: center; margin-top: 50px; opacity: 0; transform: translateY(30px); transition: all 1s ease-out; transition-delay: 0.7s; flex-wrap: wrap;">
+                    <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 20px; border-radius: 16px; cursor: pointer; text-align: center;"
+                        onclick="window.location.href='jobs.html'"><i class="fas fa-search"
+                            style="font-size: 30px; color: white;"></i>
+                        <h3 style="color: white; margin-top: 8px;">Find Jobs</h3>
+                        <p style="color: rgba(255,255,255,0.8);">Browse opportunities</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); padding: 20px; border-radius: 16px; cursor: pointer; text-align: center;"
+                        onclick="window.location.href='companies.html'"><i class="fas fa-building"
+                            style="font-size: 30px; color: white;"></i>
+                        <h3 style="color: white; margin-top: 8px;">Top Companies</h3>
+                        <p style="color: rgba(255,255,255,0.8);">Work with leaders</p>
+                    </div>
+                </div>
+                <div style="margin-top: 50px;"><a href="log_in.html"
+                        style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 16px 48px; border-radius: 9999px; font-size: 1.2rem; font-weight: 700; display: inline-flex; gap: 12px; text-decoration: none;"><i
+                            class="fas fa-rocket"></i> Get Started <i class="fas fa-arrow-right"></i></a></div>
+                <div id="statsSection"
+                    style="display: flex; justify-content: center; gap: 40px; margin-top: 60px; opacity: 0; transform: translateY(30px); transition: all 1s ease-out; transition-delay: 0.9s;">
+                    <div>
+                        <h2 style="color: white; font-size: 2rem;">1000+</h2>
+                        <p style="color: white;">Job Opportunities</p>
+                    </div>
+                    <div>
+                        <h2 style="color: white; font-size: 2rem;">500+</h2>
+                        <p style="color: white;">Companies</p>
+                    </div>
+                    <div>
+                        <h2 style="color: white; font-size: 2rem;">10k+</h2>
+                        <p style="color: white;">Students Hired</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600" alt="Team">
+                </div>
+                <div class="about-content">
+                    <h2>Connecting Talent with Opportunity</h2>
+                    <p class="lead">StudentGig is Sri Lanka's most trusted job portal, helping thousands of students find meaningful careers and enabling companies to build amazing teams.</p>
+                    <p>Our platform uses smart matching to connect you with roles that fit your skills. Whether you're a fresh graduate or an experienced professional, StudentGig opens doors to the best opportunities across the island.</p>
+                    <div class="about-stats">
+                        <div class="stat-item"><span class="stat-number">10k+</span> <span class="stat-label">Jobs Posted</span></div>
+                        <div class="stat-item"><span class="stat-number">500+</span> <span class="stat-label">Companies</span></div>
+                        <div class="stat-item"><span class="stat-number">15k+</span> <span class="stat-label">Happy Candidates</span></div>
+                    </div>
+                    <a href="jobs.html" class="btn btn-green">Browse Jobs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="companies-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Top Companies Hiring Now</h2>
+            <div class="company-grid-home" id="homeCompanies"></div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Featured Jobs</h2>
+        <div class="job-grid featured-jobs" id="featuredJobs"></div>
+    </div>
+
+    <section class="news-section">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            <div class="news-grid" id="newsGrid"></div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Get Job Alerts & News</h2>
+                <p>Subscribe to receive the latest job openings and career tips directly in your inbox.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-green">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StudentGig</h3>
+                    <p>Sri Lanka's premier job portal connecting talented professionals with leading companies.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs.html">Find Jobs</a></li>
+                        <li><a href="companies.html">Companies</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>For Employers</h3>
+                    <ul>
+                        <li><a href="post_job.html">Post a Job</a></li>
+                        <li><a href="#" class="coming-soon">Search Resumes</a></li>
+                        <li><a href="#" class="coming-soon">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 StudentGig. All rights reserved. Sri Lanka's Trusted Job Portal.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>

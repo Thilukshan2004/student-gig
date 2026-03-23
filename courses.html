@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses - StudentGig</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Student<span>Gig</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="companies.html">Companies</a>
+                <a href="courses.html" class="active">Courses</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <a href="post_job.html" class="btn btn-green">Post a Job</a>
+                <a href="login.html" class="btn btn-green">Log In</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-courses">
+        <div class="container">
+            <h1>Unlock Your Future with <span>Top Courses</span></h1>
+            <p>Learn from world-class platforms like Coursera, Udemy, edX & more. Gain new skills, earn certificates, and advance your career.</p>
+            <div class="search-box">
+                <input type="text" id="courseSearch" placeholder="Search for courses, subjects or platforms...">
+                <button class="btn btn-green" id="courseSearchBtn"><i class="fas fa-search"></i> Explore</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="platform-showcase">
+        <div class="container">
+            <h2 class="section-title">🌟 Featured Learning Platforms</h2>
+            <div class="platform-grid" id="platformGrid"></div>
+        </div>
+    </div>
+
+    <section class="courses-section">
+        <div class="container">
+            <h2 class="section-title">🔥 Popular Courses This Month</h2>
+            <div class="course-grid" id="courseGrid"></div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="#" class="btn btn-green view-all-courses">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="trusted-section">
+        <div class="container">
+            <h2 class="section-title">Trusted by Top Institutions & Learners</h2>
+            <div class="partner-logos">
+                <div class="partner-item"><i class="fas fa-university"></i><span>Stanford Online</span></div>
+                <div class="partner-item"><i class="fab fa-google"></i><span>Google Career</span></div>
+                <div class="partner-item"><i class="fas fa-chart-line"></i><span>IBM Skills</span></div>
+                <div class="partner-item"><i class="fas fa-code"></i><span>Microsoft Learn</span></div>
+                <div class="partner-item"><i class="fas fa-globe"></i><span>Harvard Online</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>📧 Get Course Alerts & Career Tips</h2>
+                <p>Subscribe to get weekly updates about new courses, discounts, and free certifications.</p>
+                <form class="newsletter-form" id="courseNewsletter">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-green">Subscribe →</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section"><h3>StudentGig</h3><p>Sri Lanka's premier job portal connecting talented professionals with leading companies.</p></div>
+                <div class="footer-section"><h3>Quick Links</h3><ul><li><a href="index.html">Home</a></li><li><a href="jobs.html">Find Jobs</a></li><li><a href="companies.html">Companies</a></li><li><a href="aboutus.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="courses.html">Courses</a></li></ul></div>
+                <div class="footer-section"><h3>For Employers</h3><ul><li><a href="post_job.html">Post a Job</a></li><li><a href="#" class="coming-soon">Search Resumes</a></li><li><a href="#" class="coming-soon">Pricing</a></li></ul></div>
+                <div class="footer-section"><h3>Follow Us</h3><div class="social-links"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 StudentGig. All rights reserved. Sri Lanka's Trusted Job Portal.</p></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
