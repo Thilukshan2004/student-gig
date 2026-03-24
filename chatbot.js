@@ -13,7 +13,7 @@
                 <button id="chat-close">&times;</button>
             </div>
             <div id="chat-messages" class="chat-messages">
-                <div class="message bot">Hello! I'm JobFactory AI. How can I help you today?</div>
+                <div class="message bot">Hello! I'm StudentGig AI. How can I help you today?</div>
             </div>
             <div class="chat-input">
                 <input type="text" id="chat-input" placeholder="Type your message...">
